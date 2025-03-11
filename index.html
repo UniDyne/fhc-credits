@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Return &amp; Credit Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css">
+
+/* @extend display-flex; */
+display-flex, .form-row, ul, .title, .actions ul li a, .form-date-item .select-icon, .form-date-item .select-icon i, .form-date-group {
+  display: flex;
+  display: -webkit-flex; }
+
+/* @extend list-type-ulli; */
+list-type-ulli, ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+a:focus, a:active {
+  text-decoration: none;
+  outline: none;
+  transition: all 300ms ease 0s;
+  -moz-transition: all 300ms ease 0s;
+  -webkit-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  -ms-transition: all 300ms ease 0s; }
+
+input, select, textarea {
+  outline: none;
+  appearance: unset !important;
+  -moz-appearance: unset !important;
+  -webkit-appearance: unset !important;
+  -o-appearance: unset !important;
+  -ms-appearance: unset !important; }
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  -o-appearance: none !important;
+  -ms-appearance: none !important;
+  margin: 0; }
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  -ms-box-shadow: none !important; }
+
+input[type=checkbox] {
+  appearance: checkbox !important;
+  -moz-appearance: checkbox !important;
+  -webkit-appearance: checkbox !important;
+  -o-appearance: checkbox !important;
+  -ms-appearance: checkbox !important; }
+
+input[type=radio] {
+  appearance: radio !important;
+  -moz-appearance: radio !important;
+  -webkit-appearance: radio !important;
+  -o-appearance: radio !important;
+  -ms-appearance: radio !important; }
+
+.clear {
+  clear: both; }
+
+h2 {
+  font-size: 20px;
+  color: #222;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px;
+  padding-top: 35px; }
+
+body {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #222;
+  font-weight: 400;
+  font-family: 'Roboto Slab';
+  margin: 0px;
+  background: #335533; }
+
+.main {
+  padding: 60px 0; }
+
+.container {
+  width: 630px;
+  position: relative;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px; }
+
+.signup-form {
+  padding: 32px 90px 40px 90px; }
+
+input, select {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  font-family: 'Roboto Slab';
+  font-size: 13px;
+  padding: 15px 20px; }
+
+input:focus {
+  border: 1px solid #666; }
+
+input.valid {
+  border: 1px solid #666; }
+
+.form-group, .form-select, .form-date {
+  margin-bottom: 15px;
+  position: relative; }
+
+.form-row {
+  justify-content: space-between;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -o-justify-content: space-between;
+  -ms-justify-content: space-between; }
+  .form-row .form-select {
+    width: 160px; }
+  .form-row .form-date {
+    width: 266px; }
+
+label {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 5px; }
+
+label.required {
+  position: relative; }
+  label.required:after {
+    content: '*';
+    margin-left: 2px;
+    color: #b90000; }
+
+.steps {
+  margin-bottom: 23px; }
+  .steps ul {
+    justify-content: space-between;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -o-justify-content: space-between;
+    -ms-justify-content: space-between; }
+
+a {
+  text-decoration: none; }
+
+.icon {
+  font-size: 29px; }
+
+.title {
+  background: #adadad;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  justify-content: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  flex-direction: column;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -o-flex-direction: column;
+  -ms-flex-direction: column;
+  width: 90px;
+  height: 90px;
+  color: #fff; }
+
+.title_text {
+  margin-top: -5px; }
+
+.current .title {
+  background: #336633; }
+
+.content h3 {
+  display: none; }
+
+fieldset {
+  border: none;
+  margin: 0px;
+  padding: 0px; }
+
+.actions {
+  margin-top: 25px; }
+  .actions .disabled {
+    display: none; }
+  .actions ul {
+    justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -o-justify-content: flex-end;
+    -ms-justify-content: flex-end; }
+    .actions ul li {
+      margin-left: 10px; }
+      .actions ul li:first-child a {
+        background: #adadad; }
+      .actions ul li a {
+        background: #336633;
+        width: 130px;
+        height: 50px;
+        color: #fff;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        justify-content: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        -o-justify-content: center;
+        -ms-justify-content: center;
+        align-items: center;
+        -moz-align-items: center;
+        -webkit-align-items: center;
+        -o-align-items: center;
+        -ms-align-items: center; }
+        .actions ul li a:hover {
+          background-color: #f82d2a; }
+
+label.error {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0; }
+  label.error:after {
+    font-family: 'themify';
+    position: absolute;
+    content: '\e717';
+    right: 20px;
+    top: 40px;
+    font-size: 13px;
+    color: #ff1212; }
+
+input.error, textarea.error, select.error {
+  border: 1px solid #ff1212; }
+
+ul.list-item {
+  z-index: 9;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  display: block; }
+
+.btn, ul.list-item li {
+  padding: 13px 20px;
+  z-index: 2;
+  color: #222;
+  font-size: 13px; }
+
+ul.list-item li:not(.init) {
+  display: none;
+  background: #fff;
+  color: #222;
+  padding: 5px 20px; }
+
+.btn, ul.list-item li:not(.init):hover, ul.list-item li.selected:not(.init) {
+  background: #336633;
+  color: #fff; }
+
+li.init {
+  cursor: pointer;
+  position: relative; }
+  li.init:after {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-size: 10px;
+    color: #222;
+    font-family: 'themify';
+    content: '\e64b'; }
+
+legend {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 17px;
+  margin-bottom: 20px; }
+  legend span {
+    display: inline-block; }
+
+.step-heading {
+  color: #336633;
+  float: left; }
+
+.step-number {
+  float: right; }
+
+.form-date-item {
+  position: relative;
+  overflow: hidden; }
+  .form-date-item:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: #ebebeb;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%); }
+  .form-date-item:last-child:after {
+    width: 0px; }
+  .form-date-item .select-icon {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center; }
+    .form-date-item .select-icon i {
+      justify-content: center;
+      -moz-justify-content: center;
+      -webkit-justify-content: center;
+      -o-justify-content: center;
+      -ms-justify-content: center;
+      align-items: center;
+      -moz-align-items: center;
+      -webkit-align-items: center;
+      -o-align-items: center;
+      -ms-align-items: center;
+      width: 30px;
+      height: 20px;
+      font-size: 10px;
+      color: #222; }
+
+.ui-datepicker-trigger {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  color: #222;
+  font-size: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+.form-date-group {
+  justify-content: space-between;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -o-justify-content: space-between;
+  -ms-justify-content: space-between;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px; }
+  .form-date-group select {
+    border: none;
+    width: 90px;
+    box-sizing: border-box;
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    -o-appearance: none !important;
+    -ms-appearance: none !important;
+    position: relative;
+    background: 0 0;
+    z-index: 10;
+    cursor: pointer; }
+
+.select-list {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  /*margin-bottom: 47px;*/ }
+
+.list-item {
+  position: absolute;
+  width: 100%;
+  z-index: 99; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 40px);
+    max-width: 100%; }
+
+  .steps ul, .form-row {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column; }
+
+  .title {
+    width: 150px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .form-row .form-date, .form-row .form-select {
+    width: 100%; } }
+@media screen and (max-width: 480px) {
+  .signup-form {
+    padding-left: 30px;
+    padding-right: 30px; } }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+
+            <h2>Credit &amp; Return Form</h2>
+
+            <form class="signup-form wizard clearfix" id="signup-form" novalidate="novalidate" role="application" action="javascript:" data-uid="pnl_form">
+                <div class="steps clearfix">
+                    <ul role="tablist">
+                        <li role="tab" class="first current" aria-disabled="false" aria-selected="true" data-uid="tab0">
+                            <a id="form-tab-0" href="#form-tab-0" aria-controls="form-panel-0">
+                                <span class="current-info audible"> </span>
+                                <span class="title">
+                                    <span class="icon"><i class="fa fa-user-o"></i></span>
+                                    <span class="title_text">Account Info</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li role="tab" class="disabled" aria-disabled="true" aria-selected="false" data-uid="tab1">
+                            <a id="form-tab-1" href="#form-tab-1" aria-controls="form-panel-1">
+                                <span class="current-info audible"> </span>
+                                <span class="title">
+                                    <span class="icon"><i class="fa fa-pencil-square-o"></i></span>
+                                    <span class="title_text">Credit Type</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li role="tab" class="disabled" aria-disabled="true" aria-selected="false" data-uid="tab2">
+                            <a id="form-tab-2" href="#form-tab-2" aria-controls="form-panel-2">
+                                <span class="title">
+                                    <span class="icon"><i class="fa fa-list-alt"></i></span>
+                                    <span class="title_text">Items</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li role="tab" class="disabled" aria-disabled="true" aria-selected="false" data-uid="tab3">
+                            <a id="form-tab-3" href="#form-tab-3" aria-controls="form-panel-3">
+                                <span class="title">
+                                    <span class="icon"><i class="fa fa-paper-plane-o"></i></span>
+                                    <span class="title_text">Submit</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content clearfix">
+
+                    <h3 id="form-head-0" tabindex="-1" class="title current">
+                        <span class="icon"><i class="fa fa-pencil-square-o"></i></span>
+                        <span class="title_text">Account Info</span>
+                    </h3>
+                    <fieldset id="form-panel-0" style="display:default" data-uid="panel0">
+                        <legend>
+                            <span class="step-heading">Account Information: </span>
+                            <span class="step-number">Step 1 / 4</span>
+                        </legend>
+    
+                        <div class="form-group">
+                            <label for="account_no" class="form-label required">Account No.</label>
+                            <input type="text" name="account_no" id="account_no" data-uid="fld_account"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="account_name" class="form-label required">Account Name</label>
+                            <input type="text" name="account_name" id="account_name" data-uid="fld_name" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="account_route" class="form-label">Route Number</label>
+                            <input type="text" name="account_route" id="account_route" data-uid="fld_route" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="account_contact" class="form-label">Billing Contact</label>
+                            <input type="text" name="account_contact" id="account_contact" data-uid="fld_contact" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="account_rep" class="form-label">Salesperson</label>
+                            <input type="text" name="account_rep" id="account_rep" data-uid="fld_rep"/>
+                        </div>
+                    </fieldset>
+
+
+                    <h3 id="form-head-1" tabindex="-1" class="title">
+                        <span class="icon"><i class="fa fa-pencil-square-o"></i></span>
+                        <span class="title_text">Credit Type</span>
+                    </h3>
+                    <fieldset id="form-panel-1" style="display:none" data-uid="panel1">
+                        <legend>
+                            <span class="step-heading">Credit Information: </span>
+                            <span class="step-number">Step 2 / 4</span>
+                        </legend>
+    
+                        <div class="form-group">
+                            <label for="credit_type" class="form-label required">Credit Request Type</label>
+                            <div class="select-list">
+                                <select name="credit_type" id="credit_type"  data-uid="fld_type">
+                                    <option value="" disabled selected>Choose One</option>
+                                    <option value="rga">Return Merchandise</option>
+                                    <option value="cm">Issue Credit Only</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes" class="form-label">Notes</label>
+                            <textarea name="notes" id="notes" rows="4" style="width:100%" data-uid="fld_notes"></textarea>
+                        </div>
+                    </fieldset>
+
+
+                    <h3 id="form-head-2" tabindex="-1" class="title">
+                        <span class="icon"><i class="fa fa-list-alt"></i></span>
+                        <span class="title_text">Items</span>
+                    </h3>
+                    <fieldset id="form-panel-2" style="display:none" data-uid="panel2">
+                        <legend>
+                            <span class="step-heading">Item Information: </span>
+                            <span class="step-number">Step 3 / 4</span>
+                        </legend>
+
+                        
+                        
+                        <div class="form-group">
+                            <label for="invoice" class="form-label required">Invoice No</label>
+                            <input type="text" name="invoice" id="invoice" data-uid="fld_invoice" />
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="sku" class="form-label required">FH SKU</label>
+                                <input type="number" name="sku" id="sku" data-uid="fld_sku"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="qty" class="form-label required">Quantity</label>
+                                <input type="number" name="qty" id="qty" min="1" max="999" step="1" data-uid="fld_qty"/>
+                            </div>
+                            <div class="form-select">
+                                <label for="code" class="form-label required">Claim Type</label>
+                                <div class="select-list">
+                                    <select name="credit_type" id="credit_type" data-uid="fld_claim">
+                                        <option value="" disabled selected>Choose One</option>
+                                        <option value="2">Item Return</option>
+                                        <option value="3">Overshipped Qty</option>
+                                        <option value="4">Mis-Shipped Item</option>
+                                        <option value="5">Damaged Item</option>
+                                        <option value="6">Defective Item</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="descript" class="form-label">Description</label>
+                            <input type="text" name="descript" id="descript" data-uid="fld_desc" />
+                        </div>
+                        <div class="form-group">
+                            <label for="comment" class="form-label">Comment</label>
+                            <input type="text" name="comment" id="comment" data-uid="fld_comment" />
+                        </div>
+                        
+                        <div class="form-row" style="justify-content:flex-end">
+                        <button data-uid="btn_add"><i class="fa fa-plus"></i> Add Item</button>
+                        </div>
+
+                        <hr>
+                        
+                        <table style="width:100%">
+                            <thead>
+                            <tr>
+                                <th align="left">Invoice</th>
+                                <th align="left">FH SKU</th>
+                                <th align="left">Qty</th>
+                                <th align="left">Claim Type</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody data-uid="tbl_items">
+                            
+                            </tbody>
+                        </table>
+                        
+                    </fieldset>
+
+                    <h3 id="form-head-3" tabindex="-1" class="title">
+                        <span class="icon"><i class="fa fa-list-alt"></i></span>
+                        <span class="title_text">Submit</span>
+                    </h3>
+                    <fieldset id="form-panel-3" style="display:none" data-uid="panel3">
+                        <legend>
+                            <span class="step-heading">Review &amp; Submit: </span>
+                            <span class="step-number">Step 4 / 4</span>
+                        </legend>
+
+                        <p>
+                            This request is for <strong>Merchandise Returns</strong> or <strong>Returns Goods Authorization</strong>.
+                            This is a request for credit. Do not deduct from remittance.
+                            A credit memo will be issued after approval by the claims department.
+                            Please review your request below, then click <i>Submit</i> to complete the process.
+                        </p>
+
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <th align="right">Account No:</th>
+                                <td align="left" data-uid="pre_account">0000</td>
+                            </tr>
+                            <tr>
+                                <th align="right">Account Name:</th>
+                                <td align="left" data-uid="pre_name">Name</td>
+                            </tr>
+                            <tr>
+                                <th align="right">Salesperson:</th>
+                                <td align="left" data-uid="pre_rep">99</td>
+                            </tr>
+                            <tr>
+                                <th align="right">Route:</th>
+                                <td align="left" data-uid="pre_route">X00</td>
+                            </tr>
+                        </table>
+
+                        <hr>
+
+                        <table style="width:100%">
+                            <thead>
+                            <tr>
+                                <th align="left">Invoice</th>
+                                <th align="left">FH SKU</th>
+                                <th align="left">Qty</th>
+                                <th align="left">Claim Type</th>
+                            </tr>
+                            </thead>
+                            <tbody data-uid="tbl_pre">
+                            
+                            </tbody>
+                        </table>
+                        
+                    </fieldset>
+
+                </div>
+
+                <div class="actions clearfix form-error">
+                    <ul role="menu" aria-label="Pagination">
+                        <li aria-hidden="false" aria-disabled="false" data-uid="btn_prev">
+                            <a href="#previous" role="menuitem">Previous</a>
+                        </li><li aria-hidden="false" aria-disabled="false" data-uid="btn_next">
+                            <a href="#next" role="menuitem">Next</a>
+                        </li><li aria-hidden="false" style="display: none;" data-uid="btn_done">
+                            <a href="#finish" role="menuitem">Submit</a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+
+            </form>
+
+            <div style="display:none;text-align:center;margin:2em" data-uid="pnl_thanks">
+                <p>
+                    Thank you for submitting your request for credit.
+                    Do not deduct from remittance.
+                    A credit memo will be issued after approval by the claims department.
+                </p>
+                <button class="btn" style="margin-bottom:2em" data-uid="btn_restart">Start Again</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+    <script type="text/javascript">
+'use strict';
+var _global = this;
+
+if (typeof Object.assign != 'function') {
+	Object.assign = function (target, varArgs) { // .length of function is 2
+		if (target == null) { // TypeError if undefined or null
+			throw new TypeError('Cannot convert undefined or null to object');
+		}
+
+		var to = Object(target);
+
+		for (var index = 1; index < arguments.length; index++) {
+			var nextSource = arguments[index];
+
+			if (nextSource != null) { // Skip over if undefined or null
+				for (var nextKey in nextSource) {
+					// Avoid bugs when hasOwnProperty is shadowed
+					if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+						to[nextKey] = nextSource[nextKey];
+					}
+				}
+			}
+		}
+		return to;
+	};
+}
+
+if(Object.defineProperty) Object.defineProperty(Object.prototype, 'expand', { value: function(o) { Object.assign(this.prototype || this, o); }, enumerable: false });
+else Object.prototype.expand = function(o) { Object.assign(this.prototype || this, o); };
+
+Function.expand({
+	subclass: function(constructor) {
+		function surrogate() {}
+		surrogate.prototype = this.prototype;
+		var protoObj = new surrogate();
+		protoObj.constructor = constructor;
+		constructor.prototype = protoObj;
+	}
+});
+
+String.expand({
+	procTmpl:function(d){return this.replace(/%\(([A-Za-z0-9_\|]*)\)/g,(w,g)=>{g=g.split('|');var r=(typeof(d[g[0]])!='undefined'&&d[g[0]]!=null)?d[g[0]]:'';return g.length>1?Format[g[1]](r):r;});},
+	trim:function(){return this.replace(/^\s+|\s+$/g,'');}
+});
+
+document.expand({ start: function(cb) { this.readyState === "loading" ? this.addEventListener('DOMContentLoaded',cb) : window.setTimeout(cb,100);	} });
+
+Element.expand({
+	toggleDisplay: function(b) { b=b||true; this.style['display'] = (this.style['display'] == 'block' || !b) ? 'none' : 'block'; },
+	onlyMe: function(s) {
+		var p = this.parentElement; for(var i = 0; i < p.children.length; i++) {
+			p.children[i].classList.remove(s);
+		}
+		this.classList.add(s);
+	},
+	empty: function() {while(this.lastChild)this.removeChild(this.lastChild);},
+	remove: function() {this.parentElement.removeChild(this);},
+	initUI: function() {
+		var ui = {}, eaCtrls = this.querySelectorAll('[data-uid], [data-widget], input');
+		for(var i = 0; i < eaCtrls.length; i++) {
+			var t = eaCtrls[i].getAttribute('data-widget'),
+				n = eaCtrls[i].getAttribute('data-uid') || eaCtrls[i].id,
+				//e = (t && ControlTypes[t]) ? ControlTypes[t](eaCtrls[i]) : eaCtrls[i];
+				e = eaCtrls[i];
+			if(n) ui[n] = e;
+		}
+		
+		return ui;
+	},
+	applyStyles: function(s){for(var k in s)this.style[k]=s[k];}
+});
+
+var Format = {
+	fixed: function(x) { return x.toFixed(2); },
+	percent: function(x) { return (x*100)>>0 + '%'; },
+	taxrate: function(x) { return (x*100).toFixed(3) + '%'; }
+};
+
+/* build a UI from a template */
+function procUI(def,dx,ui) {
+	ui=ui||{};var m={c:'class',s:'style',it:'type',is:'size',iv:'value'};
+	var ele = document.createElement(def.t||def.type||'div');
+	Object.keys(def).forEach((x)=>(m[x]?ele.setAttribute(m[x],def[x].procTmpl(dx)):null));
+	if(def.cn)def.cn.forEach((x)=>{var p=procUI(x,dx,ui);ele.appendChild(p.e);});
+	
+	if(def.a)Object.keys(def.a).forEach((x)=>ele.setAttribute(x,def.a[x].procTmpl(dx)));
+	if(def.b)Object.keys(def.b).forEach(x=>ele.setAttribute(x,def.b[x]));
+	if(def.d)Object.keys(def.d).forEach((x)=>ele.setAttribute('data-'+x,def.d[x].procTmpl(dx)));
+	
+	if(def.so)ele.applyStyles(def.so);
+	if(def.tx)ele.innerText=def.tx.procTmpl(dx);
+
+	if(def.ec)ele.addEventListener('click',def.ec);
+	if(def.ui)ui[def.ui]=ele;
+
+	return {e:ele,ui:ui};
+}
+
+function getTemplate(id) {
+	// update this...
+	return document.getElementById("tmpl_"+id).innerText;
+}
+
+
+/***
+APP
+***/
+
+document.start(() => {
+    const app_base = '/';
+    const api_base = '//fhcapi.nolag.tech/ninja';
+
+    _global.UI = document.body.initUI();
+    UI.tabs = [UI.tab0,UI.tab1,UI.tab2,UI.tab3];
+    UI.panels = [UI.panel0,UI.panel1,UI.panel2,UI.panel3];
+
+    _global.App = {
+        apiCall: function(mod, meth, param, heads) {
+            return new Promise(resolve => {
+                heads = heads || {};
+                param = param || {};
+
+                fetch(`$(api_base)/$(mod)/$(meth)`,{
+                    method: 'POST',
+                    mode: 'same-origin',
+                    headers: heads,
+                    body: JSON.stringify(param)
+                }).then(resp => {
+                    if(!resp.ok) return console.log(JSON.stringify(resp));
+                    resp.json().then(x => resolve(x));
+                });
+            });
+        }
+    };
+
+    const num_steps = 4;
+    const formData = [
+        [
+            ['fld_account',/^[0-9]{1,6}$/,'account'],
+            ['fld_name',/^.{3,}$/,'name'],
+            ['fld_route',/^([a-z0-9]{3}|)$/i,'route'],
+            ['fld_contact',/^(.{3,}|)$/,'contact'],
+            ['fld_rep',/^([0-9]{2,6}|)$/,'rep']
+        ],
+        [
+            ['fld_type',/^(rga|cm)$/,'rtype'],
+            ['fld_notes',/^(.{4,255}|)$/s,'notes']
+        ],
+        () => state.items.length > 0,
+        () => true
+    ];
+    const itemData = [
+        ['fld_invoice',/^[0-9]{6,10}$/,'invoice'],
+        ['fld_sku',/^[0-9]{8}$/,'sku'],
+        ['fld_qty',/^[0-9]{1,3}$/,'qty'],
+        ['fld_claim',/^[0-9]{1,2}$/,'claim'],
+        ['fld_desc',/^(.{3,}|)$/,'desc'],
+        ['fld_desc',/^(.{3,64}|)$/,'comment']
+    ];
+    const claims = {
+        '2': {rtype: 'rga', name: 'Return to Stock'},
+        '3': {rtype: 'rga', name: 'Overship RGA'},
+        '4': {rtype: 'rga', name: 'Mis-Ship RGA'},
+        '5': {rtype: 'rga', name: 'Damaged RGA'},
+        '6': {rtype: 'rga', name: 'Defective RGA'},
+        '11': {rtype: 'cm', name: 'Shortage'},
+        '12': {rtype: 'cm', name: 'Overship - Keeping'},
+        '13': {rtype: 'cm', name: 'Mis-Ship - Keeping'},
+        '14': {rtype: 'cm', name: 'Refused Delivery'},
+        '15': {rtype: 'cm', name: 'Damage Allowance'},
+        '16': {rtype: 'cm', name: 'Price Adjustment'},
+        '17': {rtype: 'cm', name: 'Destroy in Field'}
+    };
+
+    let step, state;
+
+    // reset form app
+    function reset() {
+        step = 0;
+        state = {
+            account: '',
+            name: '',
+            route: '',
+            contact: '',
+            rep: '',
+            rtype: '',
+            notes: '',
+            items: []
+        };
+
+        UI.fld_account.value = '';
+        UI.fld_name.value = '';
+        UI.fld_route.value = '';
+        UI.fld_contact.value = '';
+        UI.fld_rep.value = '';
+        UI.fld_type.value = '';
+        UI.fld_notes.value = '';
+
+        UI.tbl_items.empty();
+        UI.tbl_pre.empty();
+
+        resetItem();
+        showState();
+    }
+
+    // reset the item form
+    function resetItem() {
+        UI.fld_invoice.value = '';
+        UI.fld_sku.value = '';
+        UI.fld_qty.value = '';
+        UI.fld_claim.value = '';
+        UI.fld_desc.value = '';
+        UI.fld_comment.value = '';
+    }
+
+    // validate field and store value
+    function checkValid(f, x) {
+        let t = (''+UI[f[0]].value).trim();
+        let v = f[1].test(t);
+        UI[f[0]].classList[(v ? 'remove' : 'add')]('error');
+        if(v && f[2]) x[f[2]] = t;
+        return v;
+    }
+
+    // previous button
+    UI.btn_prev.addEventListener('click', () => {
+        if(step > 0) step--;
+        showState();
+    });
+
+    // next button
+    UI.btn_next.addEventListener('click', () => {
+        if(! (!formData[step].length ? formData[step]() : formData[step].reduce((v, f) => checkValid(f, state) && v, true))) return;
+        if(step < num_steps - 1) step++;
+        showState();
+    });
+
+    // finish button
+    UI.btn_done.addEventListener('click', () => {
+        // DO SOMETHING
+        alert("Not connected to API. This form is only a demo.");
+
+        // submit the json state
+
+        UI.pnl_thanks.style['display'] = null;
+        UI.pnl_form.style['display'] = 'none';
+    });
+
+    UI.btn_restart.addEventListener('click', () => {
+        reset();
+        UI.pnl_thanks.style['display'] = 'none';
+        UI.pnl_form.style['display'] = null;
+    });
+
+    // button for item form
+    UI.btn_add.addEventListener('click', () => {
+        let item = {
+            invoice: '',
+            sku: '',
+            qty: 0,
+            claim: '',
+            desc: '',
+            comment: ''
+        };
+
+        // validate item form
+        if(! itemData.reduce((v,f) => checkValid(f, item) && v, true)) return;
+
+        // add item to list
+        insertItem(item);
+
+        // clear item form
+        resetItem();
+        UI.fld_invoice.focus();
+    });
+
+
+    Format.claim = (x) => claims.hasOwnProperty(x) ? claims[x].name : 'Unknown';
+
+    function populateClaims() {
+        let c = Object.keys(claims).filter( x => claims[x].rtype == state.rtype );
+        let m = UI.fld_claim;
+        while(m.lastChild && m.lastChild.value != '')m.removeChild(m.lastChild);
+        for(let i = 0; i < c.length; i++)
+           m.appendChild(procUI({t:'option',tx:claims[c[i]].name,iv:c[i]}).e);
+        m.value = '';
+    }
+
+    function populateConfirm() {
+        UI.pre_account.innerText = state.account;
+        UI.pre_name.innerText = state.name;
+        UI.pre_rep.innerText = state.rep;
+        UI.pre_route.innerText = state.route;
+
+        UI.tbl_pre.empty();
+        for(let i = 0; i < state.items.length; i++)
+            UI.tbl_pre.appendChild(procUI({
+                t:'tr', cn: [
+                    {t:'td',tx:state.items[i].invoice},
+                    {t:'td',tx:state.items[i].sku},
+                    {t:'td',tx:state.items[i].qty},
+                    {t:'td',tx:Format.claim(state.items[i].claim)}
+                ]
+            }).e);
+    }
+    
+    function insertItem(item) {
+        let row;
+        let click = () => {
+            row.remove();
+            var x = state.items.indexOf(item);
+            if(x>=0) state.items.splice(x,1);
+        };
+        // append item to top of table
+        row = procUI({t:'tr',cn:[
+            {t:'td',tx:item.invoice},
+            {t:'td',tx:item.sku},
+            {t:'td',tx:item.qty},
+            {t:'td',tx:Format.claim(item.claim)},
+            {t:'td',cn:[
+                {t:'div',cn:[{t:'i',c:'fa fa-trash'}],ec:click}
+            ]}
+        ]}).e;
+        UI.tbl_items.prepend(row);
+
+        state.items.push(item);
+    }
+
+    function showState() {
+        if(step == 2) populateClaims();
+        if(step == 3) populateConfirm();
+        
+        for(let i = 0; i < 4; i++) {
+            if(i != step) {
+                UI.tabs[i].classList.remove('current');
+                UI.tabs[i].classList.add('disabled');
+                UI.tabs[i].ariaSelected = false;
+                UI.tabs[i].ariaDisabled = true;
+
+                UI.panels[i].style['display'] = 'none';
+            } else {
+                UI.tabs[i].classList.add('current');
+                UI.tabs[i].classList.remove('disabled');
+                UI.tabs[i].ariaSelected = true;
+                UI.tabs[i].ariaDisabled = false;
+
+                UI.panels[i].style['display'] = 'block';
+            }
+        }
+
+        
+        UI.btn_prev.style['display'] = (step == 0 ? 'none' : null);
+        UI.btn_next.style['display'] = (step < 3 ? null : 'none');
+        UI.btn_done.style['display'] = (step == 3 ? null : 'none');
+    }
+
+    reset();
+});
+
+
+    </script>
+</body>
+</html>
