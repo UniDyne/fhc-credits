@@ -852,7 +852,7 @@ document.start(() => {
                 heads = heads || {};
                 param = param || {};
 
-                fetch(`$(api_base)/$(mod)/$(meth)`,{
+                fetch(`${api_base}/${mod}/${meth}`,{
                     method: 'POST',
                     mode: 'cors',
                     headers: heads,
