@@ -840,7 +840,7 @@ APP
 
 document.start(() => {
     const app_base = '/';
-    const api_base = '//fhcapi.nolag.tech/ninja';
+    const api_base = '//fhc-api.nolag.tech/api';
 
     _global.UI = document.body.initUI();
     UI.tabs = [UI.tab0,UI.tab1,UI.tab2,UI.tab3];
@@ -970,7 +970,8 @@ document.start(() => {
     // finish button
     UI.btn_done.addEventListener('click', () => {
         // DO SOMETHING
-        alert("Not connected to API. This form is only a demo.");
+        alert("This is a demo. API call will use test endpoint.");
+        App.apiCall('rga','send',state).then( x => {if(!x) alert("Error sending data.");} );
 
         // submit the json state
 
