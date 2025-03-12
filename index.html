@@ -854,7 +854,7 @@ document.start(() => {
 
                 fetch(`${api_base}/${mod}/${meth}`,{
                     method: 'POST',
-                    mode: 'cors',
+                    mode: 'no-cors',
                     headers: heads,
                     body: JSON.stringify(param)
                 }).then(resp => {
